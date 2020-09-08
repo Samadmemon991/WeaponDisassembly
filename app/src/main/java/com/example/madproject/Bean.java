@@ -58,12 +58,12 @@ public class Bean extends AppCompatActivity implements ValueEventListener {
         DatabaseReference myRef = database.getReference("weapons").child(selectedCategory).child(selectedWeapon);
         //Query q = myRef.limitToFirst(1);
         myRef.addValueEventListener(this);
-        // q.addListenerForSingleValueEvent(this);
+
 
 
         pd = new ProgressDialog(Bean.this);
         pd.setMessage("buffering");
-        //pd.show();////////////////////////////////////////////Testing///////////////////////////////////////////////
+        pd.show();
 
         String s = "https://firebasestorage.googleapis.com/v0/b/fir-fbedb.appspot.com/o/Cash%20prizes%20will%20be%20given%20to%20winners%20(5).mp4?alt=media&token=d13ce2e4-a6a1-4ee1-8536-315aad0903d1";
 
@@ -74,8 +74,8 @@ public class Bean extends AppCompatActivity implements ValueEventListener {
         //videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.samplevideo);
 
         videoView.setVideoURI(Uri.parse(s));
-        //videoView.start();////////////////////////////////////////////Testing///////////////////////////////////////////////
-        frame.setVisibility(View.GONE);////////////////////////////////////////////Testing///////////////////////////////////////////////
+        videoView.start();
+
 
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override

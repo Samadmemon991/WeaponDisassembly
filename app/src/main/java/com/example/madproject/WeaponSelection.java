@@ -14,6 +14,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -24,8 +25,6 @@ public class WeaponSelection extends AppCompatActivity implements View.OnClickLi
     ArrayList viewIds;
     Intent intent;
     View inflator;
-    ArrayList<String> dataWeaponlist;
-    String[] arr;
     String selectedCategory;
 
     @Override
@@ -41,11 +40,10 @@ public class WeaponSelection extends AppCompatActivity implements View.OnClickLi
         categoryName.setText(selectedCategory);
 
 
-
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("weapons").child(selectedCategory);
+        //Query q = myRef.limitToFirst(3);
         myRef.addValueEventListener(this);
-
 
 
         viewIds = new ArrayList<View>();
@@ -77,7 +75,7 @@ public class WeaponSelection extends AppCompatActivity implements View.OnClickLi
                     View dumyView = (View) viewIds.get(i);
                     TextView dumyText = (TextView) dumyView.findViewById(R.id.text);
                     weaponName = (String) dumyText.getText();
-                    System.out.println("clicked "+weaponName);
+                    System.out.println("clicked " + weaponName);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -110,16 +108,19 @@ public class WeaponSelection extends AppCompatActivity implements View.OnClickLi
     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
 
-        dataWeaponlist = new ArrayList<>();
         for (DataSnapshot d : snapshot.getChildren()) {
-            dataWeaponlist.add(d.getValue().toString());
 
 
+            String s = d.child("muzzle").toString();
+            s = s.substring(s.lastIndexOf("value ="), s.lastIndexOf("}"));
+
+
+            System.out.println(snapshot.getChildrenCount() + "-----------------------------------------------------" + s);
             inflator = LayoutInflater.from(WeaponSelection.this).inflate(R.layout.card, null);
             weaponList.addView(inflator);
             viewIds.add(inflator);
             weaponName = inflator.findViewById(R.id.text);
-            weaponName.setText(d.getValue().toString());
+            weaponName.setText(d.getKey().toString());
             inflator.setOnClickListener(WeaponSelection.this);
 
         }
