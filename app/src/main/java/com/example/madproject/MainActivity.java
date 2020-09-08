@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Intent intent;
     String category;
     String[] s;
+    ImageView imgCat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         System.out.println("started main");
 
+        imgCat = (ImageView) findViewById(R.id.catImg);
         rifles = (LinearLayout) findViewById(R.id.Rifles);
         shotguns = (LinearLayout) findViewById(R.id.Shotguns);
         pistols = (LinearLayout) findViewById(R.id.Pistols);
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         submachineGuns.setOnClickListener(MainActivity.this);
         revolvers.setOnClickListener(MainActivity.this);
         snipers.setOnClickListener(MainActivity.this);
+        imgCat.setImageResource(R.drawable.screen1);
 
 
     }
