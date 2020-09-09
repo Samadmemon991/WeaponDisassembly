@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
 
-        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
 
         android:id="@+id/nameHolder">
 
@@ -42,9 +42,9 @@
     </RelativeLayout>
 <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_below="@+id/nameHolder"
-    android:layout_weight="8">
+    android:layout_weight="10">
     <LinearLayout
         android:id="@+id/Info"
         android:layout_width="match_parent"

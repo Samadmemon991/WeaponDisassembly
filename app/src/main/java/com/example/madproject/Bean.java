@@ -83,7 +83,7 @@ public class Bean extends AppCompatActivity implements ValueEventListener {
 
         String s;
         for (DataSnapshot d : snapshot.getChildren()) {
-            if (d.getKey().toString().equals("link")) {
+            if (d.getKey().toString().equals("video")) {
                 s = d.getValue().toString();
 
                 Uri uri = Uri.parse(s);
@@ -99,7 +99,7 @@ public class Bean extends AppCompatActivity implements ValueEventListener {
             info.addView(inflator);
 
             leftTextView = inflator.findViewById(R.id.left);
-            leftTextView.setText(d.getKey().toString());
+            leftTextView.setText(d.getKey().toString()+" :");
 
             rightTextView = inflator.findViewById(R.id.right);
             rightTextView.setText(d.getValue().toString());
