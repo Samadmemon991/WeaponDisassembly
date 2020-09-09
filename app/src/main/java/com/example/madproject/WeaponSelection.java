@@ -114,8 +114,8 @@ public class WeaponSelection extends AppCompatActivity implements View.OnClickLi
         for (DataSnapshot d : snapshot.getChildren()) {
 
 
-            String s = d.child("muzzle").toString();
-            s = s.substring(s.lastIndexOf("value ="), s.lastIndexOf("}"));
+            String s = d.child("img").toString();
+            s = s.substring(s.lastIndexOf("=")+2, s.lastIndexOf("}"));
 
 
             System.out.println(snapshot.getChildrenCount() + "-----------------------------------------------------" + s);
@@ -124,9 +124,11 @@ public class WeaponSelection extends AppCompatActivity implements View.OnClickLi
             viewIds.add(inflator);
             weaponName = inflator.findViewById(R.id.text);
             weaponName.setText(d.getKey().toString());
+            weaponImg = (ImageView) inflator.findViewById(R.id.WeaponImg);
 
 // image token
-         Picasso.get().load("https://bit.ly/3m5b6mI")
+         //Picasso.get().load("https://bit.ly/3m5b6mI")
+            Picasso.get().load(s)
                     .into(weaponImg);
 
 
