@@ -54,12 +54,11 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/catImg"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:gravity="center"
                         android:paddingTop="5dp"
-                        android:src="@drawable/sampleimg" />
+                        android:src="@drawable/rifle" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -98,7 +97,7 @@
                         android:layout_height="100dp"
                         android:gravity="center"
                         android:paddingTop="5dp"
-                        android:src="@drawable/sampleimg" />
+                        android:src="@drawable/shotgun" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -137,7 +136,7 @@
                         android:layout_height="100dp"
                         android:gravity="center"
                         android:paddingTop="5dp"
-                        android:src="@drawable/sampleimg" />
+                        android:src="@drawable/pistol" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -176,7 +175,7 @@
                         android:layout_height="100dp"
                         android:gravity="center"
                         android:paddingTop="5dp"
-                        android:src="@drawable/sampleimg" />
+                        android:src="@drawable/assaultrifle" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -215,7 +214,7 @@
                         android:layout_height="100dp"
                         android:gravity="center"
                         android:paddingTop="5dp"
-                        android:src="@drawable/sampleimg" />
+                        android:src="@drawable/machinegun" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -254,7 +253,7 @@
                         android:layout_height="100dp"
                         android:gravity="center"
                         android:paddingTop="5dp"
-                        android:src="@drawable/sampleimg" />
+                        android:src="@drawable/submachinegun" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -293,7 +292,7 @@
                         android:layout_height="100dp"
                         android:gravity="center"
                         android:paddingTop="5dp"
-                        android:src="@drawable/sampleimg" />
+                        android:src="@drawable/revolver" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -332,7 +331,7 @@
                         android:layout_height="100dp"
                         android:gravity="center"
                         android:paddingTop="5dp"
-                        android:src="@drawable/sampleimg" />
+                        android:src="@drawable/sniper" />
 
                     <TextView
                         android:layout_width="wrap_content"
