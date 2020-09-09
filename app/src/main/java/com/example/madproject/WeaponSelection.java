@@ -115,7 +115,7 @@ public class WeaponSelection extends AppCompatActivity implements View.OnClickLi
 
 
             String s = d.child("img").toString();
-            s = s.substring(s.lastIndexOf("=")+2, s.lastIndexOf("}"));
+           s = s.substring(s.lastIndexOf(" = ") + 3, s.lastIndexOf("}"));
 
 
             System.out.println(snapshot.getChildrenCount() + "-----------------------------------------------------" + s);
@@ -126,8 +126,9 @@ public class WeaponSelection extends AppCompatActivity implements View.OnClickLi
             weaponName.setText(d.getKey().toString());
             weaponImg = (ImageView) inflator.findViewById(R.id.WeaponImg);
 
-// image token
-         //Picasso.get().load("https://bit.ly/3m5b6mI")
+            // image token
+            //Picasso.get().load("https://bit.ly/3m5b6mI")
+            //Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/test.jpg?alt=media&token=6f452ac3-1edc-40c7-a6b1-686292db793e");
             Picasso.get().load(s)
                     .into(weaponImg);
 

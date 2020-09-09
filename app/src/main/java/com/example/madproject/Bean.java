@@ -92,6 +92,9 @@ public class Bean extends AppCompatActivity implements ValueEventListener {
                 continue;
 
             }
+            if (d.getKey().toString().equals("img")) {
+                continue;
+            }
             View inflator = LayoutInflater.from(Bean.this).inflate(R.layout.row, null);
             info.addView(inflator);
 

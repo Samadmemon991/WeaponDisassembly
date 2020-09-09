@@ -18,7 +18,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="45dp"
             android:layout_marginBottom="45dp"
-            android:background="@color/darkGrey"
+            android:background="@color/lightGrey"
             android:gravity="center"
             android:text="Weapons"
             android:textSize="50dp">
