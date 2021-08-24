@@ -1,0 +1,149 @@
+{
+  "Categories" : [ "Rifles", "Shotguns", "Pistols", "Assault Rifles", "Machine Guns", "Submachine Guns", "Revolvers", "Snipers" ],
+  "weapons" : {
+    "Assault Rifles" : {
+      "AK-47" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2Fak_47-removebg-preview.png?alt=media&token=30852f5c-27d1-4191-8cce-89cdd6ed57aa",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "M4 Carbine" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FM4%20Carbine.png?alt=media&token=09be6053-c1a9-4bc1-a898-4f0ea5c458ca",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "Steyr AUG" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2Fsteyr%20aug%20assault%20rifle.png?alt=media&token=22d9f08f-9a3a-4108-ab79-6a18c50e26ca",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      }
+    },
+    "Machine Guns" : {
+      "Bren LMG" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2Fbren%20lmg.png?alt=media&token=85ed939d-6494-428e-b425-e27a7e370887",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "DP-28" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2Fdp-28.png?alt=media&token=0912be5d-1047-4856-9dfc-b1ac78730bcf",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "M2 Browning" : {
+        "Action " : "Short recoil-operated",
+        "Cartridge" : ".50 BMG",
+        "Feed System" : "Belt-fed",
+        "Firing range" : "1800m",
+        "In Production" : "since 1921",
+        "Length" : "1,654 mm ",
+        "Rate of fire" : "450-600/min",
+        "Type" : "Heavy Machine Gun",
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FM2%20Browning.png?alt=media&token=3f92e74f-943a-4a00-ac54-57ace399892a",
+        "muzzle" : "2910 ft/sec",
+        "video" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/videos%2FM2%20Browning.mp4?alt=media&token=b6f113a2-ac7d-4c37-991c-afd5dd513e7f"
+      }
+    },
+    "Pistols" : {
+      "Beretta 92" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FBretta%2092.png?alt=media&token=a3582830-ca79-4ccf-b7d2-efe2cfc96f80",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "Desert Eagle" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FDesert%20Eagle.png?alt=media&token=2b9c8165-bb31-4a3e-92a5-07671d463122",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "HK USP" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FHK%20USP.png?alt=media&token=183d5b42-91c1-425c-aeef-4968c88a2830",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      }
+    },
+    "Revolvers" : {
+      "Ruger Super Redhawk" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FRuger%20Super%20Redhawk.png?alt=media&token=6c8f0fec-d8da-4116-8d96-4a37fb45492c",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "Smith & Wesson Schofield" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FSmith%20%26%20Wesson%20Schofield.png?alt=media&token=e532532b-581d-443f-8912-6f543d8f0b0a",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "Webley Mk IV" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FWebley%20Mk%20IV.png?alt=media&token=537ce324-67b9-4825-a92d-e158a9c25ee4",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      }
+    },
+    "Rifles" : {
+      "Beretta ARX100" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FARX100.png?alt=media&token=36d382ef-c183-4a6a-8fa7-62329b89943e",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "M1918 Browning " : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FM1918%20Browning.png?alt=media&token=f7043de9-be12-4d1f-a645-c9d40abeda74",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "Remington Model 700" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FRemington%20700.png?alt=media&token=94dc11f4-1cc9-4a80-ab93-8de9dd6c7c79",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      }
+    },
+    "Shotguns" : {
+      "Browning Auto-5" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FBrowning-Auto.png?alt=media&token=82264521-c164-41f3-b482-b0804fd6a535",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "Saiga 12К" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FSaiga%2012.png?alt=media&token=72dcfe7d-489c-42c3-8e8a-31b2ff50a635",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "USAS-12" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FUSAS12.png?alt=media&token=e9ff802b-a582-4732-987f-6b4339025d97",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      }
+    },
+    "Snipers" : {
+      "Dragunov" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FDragunov.png?alt=media&token=928a6a19-10a3-458e-86ba-42461a04b2fe",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "Mosin Nagant" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2Fmosin%20nagant.png?alt=media&token=415e9677-0421-4b72-b1ec-013c8b242a8a",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "SIG SG 550 Sniper" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2Fsig%20sg%20550%20sniper.png?alt=media&token=a595f93c-c2f2-4ec2-9359-d7d055232400",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      }
+    },
+    "Submachine Guns" : {
+      "HK MP7" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2Fmp7.png?alt=media&token=320d7c40-a1cd-4324-bac1-b0057bfed7b4",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "Thompson M1928" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FThompson-M1928.png?alt=media&token=7ff601cf-d710-4ca4-b37c-d462ae8e7a03",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      },
+      "Uzi" : {
+        "img" : "https://firebasestorage.googleapis.com/v0/b/madproject-6ffab.appspot.com/o/images%2FUzi.png?alt=media&token=d5b2b85e-7ae3-4764-a8ce-0d09544b5c8c",
+        "muzzle" : "11da",
+        "velocity" : "45ms"
+      }
+    }
+  }
+}
